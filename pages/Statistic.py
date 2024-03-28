@@ -2,6 +2,10 @@ import streamlit as st
 from streamlit_lottie import st_lottie
 from streamlit_lottie import st_lottie_spinner
 import requests
+import pandas as pd
+
+
+dt=pd.read_csv('./data/citrus.csv')
 
 def load_lottieurl(url: str):
     r = requests.get(url)
@@ -14,3 +18,5 @@ lottie_hello = load_lottieurl(lottie_url_hello)
 st_lottie(lottie_hello,key="hello")
 
 st.subheader("การนำเสนอข้อมูลด้วยสถิติ")
+st.subheader("สถิติข้อมูล Oranges vs. Grapefruit")
+st.write(dt.head(10))
