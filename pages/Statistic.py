@@ -19,4 +19,3 @@ st_lottie(lottie_hello,key="hello")
 
 st.subheader("การนำเสนอข้อมูลด้วยสถิติ")
 st.subheader("สถิติข้อมูล Oranges vs. Grapefruit")
-st.write(dt.head(10))
