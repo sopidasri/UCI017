@@ -19,30 +19,17 @@ st_lottie(lottie_hello,key="hello")
 
 html_1 = """
 <div style="background-color:#52BE80;padding:15px;border-radius:15px 15px 15px 15px;border-style:'solid';border-color:black">
-<center><h5>สถิติข้อมูลดอกไม้</h5></center>
+<center><h5>สถิติข้อมูล Oranges vs. Grapefruit</h5></center>
 </div>
 """
 st.markdown(html_1, unsafe_allow_html=True)
 st.markdown("")
 
-
-
 st.subheader("การนำเสนอข้อมูลด้วยการจินตทัศน์ข้อมูล")
 
-st.write('ค่าเฉลี่ย')
-cl2,cl3,cl4,cl5,cl6=st.columns(6)
-cl2.write(dt['diameter'].mean())
-cl3.write(dt['weight'].mean())
-cl4.write(dt['red'].mean())
-cl5.write(dt['green'].mean())
-cl6.write(dt['blue'].mean())
-
-st.write("Area_Chart")
-a=dt['diameter'].mean()
-b=dt['weight'].mean()
-c=dt['red'].mean()
-d=dt['green'].mean()
-e=dt['blue'].mean()
-dxt=[a,b,c,d]
-cxx=pd.DataFrame(dxt,index=["diameter", "weight", "red","green","blue"])
-st.area_chart(cxx)
+st.write('ผลรวม')
+cl1,cl2,cl3,cl4=st.columns(4)
+cl1.write(dt['diameter'].sum())
+cl2.write(dt['weight'].sum())
+cl3.write(dt['red'].sum())
+cl4.write(dt['green'].sum())
