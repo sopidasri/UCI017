@@ -28,7 +28,7 @@ st.markdown("")
 st.subheader("การนำเสนอข้อมูลด้วยการจินตทัศน์ข้อมูล")
 
 st.write('ผลรวม')
-cl1,cl2,cl3,cl4=st.columns(5)
+cl1,cl2,cl3,cl4,cl5=st.columns(5)
 cl1.write(dt['diameter'].sum())
 cl2.write(dt['weight'].sum())
 cl3.write(dt['red'].sum())
