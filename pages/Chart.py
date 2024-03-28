@@ -25,7 +25,7 @@ html_1 = """
 st.markdown(html_1, unsafe_allow_html=True)
 st.markdown("")
 
-st.subheader("การนำเสนอข้อมูลด้วยการจินตทัศน์ข้อมูล")
+st.subheader("การนำเสนอข้อมูลด้วยการจินตทัศน์ข้อมูล+")
 
 st.write('ผลรวม')
 cl1,cl2,cl3,cl4,cl5=st.columns(5)
