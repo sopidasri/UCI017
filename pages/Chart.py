@@ -19,6 +19,14 @@ st_lottie(lottie_hello,key="hello")
 
 st.subheader("การนำเสนอข้อมูลด้วยการจินตทัศน์ข้อมูล")
 
+st.write('ค่าเฉลี่ย')
+cl2,cl3,cl4,cl5,cl6=st.columns(6)
+cl2.write(dt['diameter'].mean())
+cl3.write(dt['weight'].mean())
+cl4.write(dt['red'].mean())
+cl5.write(dt['green'].mean())
+cl6.write(dt['blue'].mean())
+
 st.write("Area_Chart")
 a=dt['diameter'].mean()
 b=dt['weight'].mean()
