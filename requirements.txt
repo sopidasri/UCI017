@@ -5,3 +5,4 @@ seaborn
 streamlit
 plotly==5.9.0
 streamlit_lottie
+scikit-learn
