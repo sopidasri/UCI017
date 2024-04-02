@@ -77,12 +77,13 @@ cl32.write(dt['weight'].min())
 cl33.write(dt['red'].min())
 cl34.write(dt['green'].min())
 cl35.write(dt['blue'].min())
-import numpy as np
-import matplotlib.pyplot as plt
-labels = ['diameter','weight', 'red','green','blue']
-sizes = [15,35,15,25,10]
-explode = (0, 0.1,0,0,0) 
-fig1, ax1 = plt.subplots()
-ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
-        shadow=True, startangle=90)
-st.pyplot(fig1)
+
+st.write("กราฟแท่ง")
+a=dt['diameter'].min()
+b=dt['weight'].min()
+c=dt['red'].min()
+d=dt['green'].min()
+e=dt['blue'].min()
+dx=[a,b,c,d,e]
+cx=pd.DataFrame(dx,index=["diameter", "weight", "red","green","blue"])
+st.bar_chart(cx)
