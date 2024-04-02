@@ -62,9 +62,9 @@ dxt=[a,b,c,d,e]
 cxx=pd.DataFrame(dxt,index=["diameter", "weight", "red","green","blue"])
 st.area_chart(cxx)
 
-labels = ['diameter', 'weight','red','green','blue']
-sizes = [20,20,10,20,30]
-explode = (0, 0.1,0,0,0) 
+labels = ['diameter','weight','red','green']
+sizes = [35,25,15,25]
+explode = (0, 0.1,0,0) 
 fig1, ax1 = plt.subplots()
 ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
         shadow=True, startangle=90)
