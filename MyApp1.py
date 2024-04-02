@@ -68,7 +68,6 @@ ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
         shadow=True, startangle=90)
 st.pyplot(fig1)
 
-
 st.write('ค่าน้อยที่สุด')
 cl31,cl32,cl33,cl34=st.columns(4)
 cl31.write(dt['sepal.length'].min())
