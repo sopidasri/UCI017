@@ -77,3 +77,12 @@ cl32.write(dt['weight'].min())
 cl33.write(dt['red'].min())
 cl34.write(dt['green'].min())
 cl35.write(dt['blue'].min())
+import numpy as np
+import matplotlib.pyplot as plt
+labels = ['precipitation','temp_max', 'temp_min','wind']
+sizes = [35,25,15,25]
+explode = (0, 0.1,0,0) 
+fig1, ax1 = plt.subplots()
+ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
+        shadow=True, startangle=90)
+st.pyplot(fig1)
