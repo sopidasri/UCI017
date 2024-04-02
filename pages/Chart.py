@@ -71,12 +71,12 @@ cl24.write(dt['green'].max())
 cl25.write(dt['blue'].max())
 
 st.write('ค่าน้อยที่สุด')
-cl21,cl22,cl23,cl24,c125=st.columns(5)
-cl21.write(dt['diameter'].min())
-cl22.write(dt['weight'].min())
-cl23.write(dt['red'].min())
-cl24.write(dt['green'].min())
-cl25.write(dt['blue'].min())
+cl31,cl22,cl23,cl24,c125=st.columns(5)
+cl31.write(dt['diameter'].min())
+cl32.write(dt['weight'].min())
+cl33.write(dt['red'].min())
+cl34.write(dt['green'].min())
+cl35.write(dt['blue'].min())
 
 labels = ['diameter','weight','red','green']
 sizes = [35,25,15,25]
