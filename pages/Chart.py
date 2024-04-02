@@ -62,6 +62,22 @@ dxt=[a,b,c,d,e]
 cxx=pd.DataFrame(dxt,index=["diameter", "weight", "red","green","blue"])
 st.area_chart(cxx)
 
+st.write('ค่ามากที่สุด')
+cl21,cl22,cl23,cl24,c125=st.columns(5)
+cl21.write(dt['diameter'].max())
+cl22.write(dt['weight'].max())
+cl23.write(dt['red'].max())
+cl24.write(dt['green'].max())
+cl25.write(dt['blue'].max())
+
+st.write('ค่าน้อยที่สุด')
+cl21,cl22,cl23,cl24,c125=st.columns(5)
+cl21.write(dt['diameter'].min())
+cl22.write(dt['weight'].min())
+cl23.write(dt['red'].min())
+cl24.write(dt['green'].min())
+cl25.write(dt['blue'].min())
+
 labels = ['diameter','weight','red','green']
 sizes = [35,25,15,25]
 explode = (0, 0.1,0,0) 
