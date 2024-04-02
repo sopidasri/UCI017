@@ -63,7 +63,7 @@ cxx=pd.DataFrame(dxt,index=["diameter", "weight", "red","green","blue"])
 st.area_chart(cxx)
 
 st.write('ค่ามากที่สุด')
-cl21,cl22,cl23,cl24,c125=st.columns(5)
+cl21,cl22,cl23,cl24,cl25=st.columns(5)
 cl21.write(dt['diameter'].max())
 cl22.write(dt['weight'].max())
 cl23.write(dt['red'].max())
@@ -71,17 +71,9 @@ cl24.write(dt['green'].max())
 cl25.write(dt['blue'].max())
 
 st.write('ค่าน้อยที่สุด')
-cl31,cl22,cl23,cl24,c125=st.columns(5)
+cl31,cl32,cl33,cl34,cl35=st.columns(5)
 cl31.write(dt['diameter'].min())
 cl32.write(dt['weight'].min())
 cl33.write(dt['red'].min())
 cl34.write(dt['green'].min())
 cl35.write(dt['blue'].min())
-
-labels = ['diameter','weight','red','green']
-sizes = [35,25,15,25]
-explode = (0, 0.1,0,0) 
-fig1, ax1 = plt.subplots()
-ax1.pie(sizes, explode=explode, labels=labels, autopct='%1.1f%%',
-        shadow=True, startangle=90)
-st.pyplot(fig1)
